@@ -99,12 +99,12 @@
 	#define FW_TEST_TAG ""
 #endif
 
-#define FW_BL_TAG "-RFG"
+#define FW_BL_TAG "-RFG.2"
 #ifndef FW_BL_TAG
   #define FW_BL_TAG ""
 #endif
 
-#define SHORT_BUILD_VERSION       "0.4.0" FW_TEST_TAG "-Marlin2.x" FW_BL_TAG
+#define SHORT_BUILD_VERSION       "MARLIN" FW_BL_TAG
 #define DEFAULT_MACHINE_NAME      "LONGER 3D Printer"   // override by  CUSTOM_MACHINE_NAME if any
 #define SOURCE_CODE_URL           "https://github.com/LONGER3D"
 #define STRING_DISTRIBUTION_DATE  "2021-12-28"
