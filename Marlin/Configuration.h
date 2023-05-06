@@ -580,9 +580,12 @@
   
   #if ANY(LK5, LK5_PRO)
     // have dual blower. send "M303 E0 S200 C8" command to get PID. 
-    #define DEFAULT_Kp 28.44
-    #define DEFAULT_Ki 2.41
-    #define DEFAULT_Kd 83.88
+    //#define DEFAULT_Kp 28.44
+    //#define DEFAULT_Ki 2.41
+    //#define DEFAULT_Kd 83.88
+    #define DEFAULT_Kp 26.54
+    #define DEFAULT_Ki 1.95
+    #define DEFAULT_Kd 90.24
   #else
     #define DEFAULT_Kp 17.22
     #define DEFAULT_Ki 1.00
@@ -661,9 +664,12 @@
   // 300x300 bed size
   #elif ANY(LK5, LK5_PRO)
     // send "M303 E-1 S80 C8" command to get PID.
-    #define DEFAULT_bedKp 174.64
-    #define DEFAULT_bedKi 27.33
-    #define DEFAULT_bedKd 743.95
+    //#define DEFAULT_bedKp 174.64
+    //#define DEFAULT_bedKi 27.33
+    //#define DEFAULT_bedKd 743.95
+    #define DEFAULT_bedKp 115.84
+    #define DEFAULT_bedKi 22.81
+    #define DEFAULT_bedKd 392.27
   #elif ANY(U20, LK1, LK1_PRO)
     //From M303 command for Alfawise U20 :
     #define DEFAULT_bedKp 841.68
