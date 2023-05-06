@@ -99,7 +99,7 @@
 	#define FW_TEST_TAG ""
 #endif
 
-#define FW_BL_TAG "-BLDual"
+#define FW_BL_TAG "-RFG"
 #ifndef FW_BL_TAG
   #define FW_BL_TAG ""
 #endif
@@ -1089,11 +1089,11 @@
  *
  * Specify a Probe position as { X, Y, Z }
  */
-#define NOZZLE_TO_PROBE_OFFSET  { -52, -16, 0 } // dualblower mount. singlefan offsets: { -36, -10, 0 }
+#define NOZZLE_TO_PROBE_OFFSET  { -40, -9, -2.15 } // dualblower mount. singlefan offsets: { -36, -10, 0 }
 
 // Most probes should stay away from the edges of the bed, but
 // with NOZZLE_AS_PROBE this can be negative for a wider probing area.
-#define MIN_PROBE_EDGE 10
+#define MIN_PROBE_EDGE 30
 
 // X and Y axis travel speed (mm/m) between probes
 #define XY_PROBE_SPEED 8000
@@ -1415,7 +1415,7 @@
 #if EITHER(AUTO_BED_LEVELING_LINEAR, AUTO_BED_LEVELING_BILINEAR)
 
   // Set the number of grid points per dimension.
-  #define GRID_MAX_POINTS_X 5
+  #define GRID_MAX_POINTS_X 4
   #define GRID_MAX_POINTS_Y GRID_MAX_POINTS_X
 
   // Probe along the Y axis, advancing X after each column
