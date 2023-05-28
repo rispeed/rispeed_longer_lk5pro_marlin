@@ -99,7 +99,7 @@
 	#define FW_TEST_TAG ""
 #endif
 
-#define FW_BL_TAG "-RFG.2"
+#define FW_BL_TAG "-RFG.7"
 #ifndef FW_BL_TAG
   #define FW_BL_TAG ""
 #endif
@@ -580,12 +580,10 @@
   
   #if ANY(LK5, LK5_PRO)
     // have dual blower. send "M303 E0 S200 C8" command to get PID. 
-    //#define DEFAULT_Kp 28.44
-    //#define DEFAULT_Ki 2.41
-    //#define DEFAULT_Kd 83.88
-    #define DEFAULT_Kp 26.54
-    #define DEFAULT_Ki 1.95
-    #define DEFAULT_Kd 90.24
+    #define DEFAULT_Kp 28.44
+    #define DEFAULT_Ki 2.41
+    #define DEFAULT_Kd 83.88
+    
   #else
     #define DEFAULT_Kp 17.22
     #define DEFAULT_Ki 1.00
@@ -664,12 +662,9 @@
   // 300x300 bed size
   #elif ANY(LK5, LK5_PRO)
     // send "M303 E-1 S80 C8" command to get PID.
-    //#define DEFAULT_bedKp 174.64
-    //#define DEFAULT_bedKi 27.33
-    //#define DEFAULT_bedKd 743.95
-    #define DEFAULT_bedKp 115.84
-    #define DEFAULT_bedKi 22.81
-    #define DEFAULT_bedKd 392.27
+    #define DEFAULT_bedKp 174.64
+    #define DEFAULT_bedKi 27.33
+    #define DEFAULT_bedKd 743.95
   #elif ANY(U20, LK1, LK1_PRO)
     //From M303 command for Alfawise U20 :
     #define DEFAULT_bedKp 841.68
@@ -870,7 +865,7 @@
  * Override with M92
  *                                      X, Y, Z, E0 [, E1[, E2...]]
  */
-#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 400, 98 }
+#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 400, 96 }
 
 /**
  * Default Max Feed Rate (mm/s)
@@ -1095,7 +1090,7 @@
  *
  * Specify a Probe position as { X, Y, Z }
  */
-#define NOZZLE_TO_PROBE_OFFSET  { -40, -9, -2.15 } // dualblower mount. singlefan offsets: { -36, -10, 0 }
+#define NOZZLE_TO_PROBE_OFFSET  { -40, -9, -2.00 } // dualblower mount. singlefan offsets: { -36, -10, 0 }
 
 // Most probes should stay away from the edges of the bed, but
 // with NOZZLE_AS_PROBE this can be negative for a wider probing area.
