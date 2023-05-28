@@ -99,7 +99,7 @@
 	#define FW_TEST_TAG ""
 #endif
 
-#define FW_BL_TAG "-RFG.7"
+#define FW_BL_TAG "-RFG.8"
 #ifndef FW_BL_TAG
   #define FW_BL_TAG ""
 #endif
